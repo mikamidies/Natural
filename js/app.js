@@ -1,8 +1,8 @@
-const cursor = document.getElementById('cursor')
+// const cursor = document.getElementById('cursor')
 
-document.addEventListener('mousemove', function(e){
-    cursor.style.cssText = 'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;';
-});
+// document.addEventListener('mousemove', function(e){
+//     cursor.style.cssText = 'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;';
+// });
 
 var swiper = new Swiper(".homeSwiper", {
   navigation: {
