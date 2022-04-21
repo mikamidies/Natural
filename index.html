@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <main class="main row">
-      <div class="col-9 con__wrap">
+    <main class="main main__row row">
+      <div class="con__wrap">
         <section class="home">
           <div class="swiper homeSwiper">
             <div class="swiper-wrapper">
@@ -50,8 +50,8 @@
               </p>
             </div>
             <div class="btns">
-              <div class="swiper-button-prev slide__btn"></div>
-              <div class="swiper-button-next slide__btn"></div>
+              <div class="swiper-button-prev home-prev slide__btn"></div>
+              <div class="swiper-button-next home-next slide__btn"></div>
             </div>
           </div>
         </section>
@@ -65,6 +65,7 @@
                     src="./video/vid.mp4"
                     autoplay
                     loop
+                    muted
                     class="about__video"
                   ></video>
                 </div>
@@ -134,9 +135,50 @@
           </div>
         </section>
 
-        <section class="projekt"></section>
+        <section class="projekt">
+          <div class="container">
+            <h2 class="projekt__title title">Наши проекты</h2>
+          </div>
+          <div class="swiper projektSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/img2.jpg" class="projekt__img" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/img3.jpg" class="projekt__img" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/img4.jpg" class="projekt__img" alt="" />
+              </div>
+            </div>
+            <div class="green__btns">
+              <div
+                class="swiper-button-prev green__btn projekt-prev slide__btn"
+              ></div>
+              <div
+                class="swiper-button-next green__btn projekt-next slide__btn"
+              ></div>
+            </div>
+          </div>
+
+          <div class="projekt__content container">
+            <div class="left__con">
+              <p class="pro__slide-title">ТАШКЕНТ СИТИ - ХИЛТОН</p>
+              <p class="pro__slide-sub">
+                <img src="./img/logo/map-black.svg" alt="" /> ТАШКЕНТ СИТИ -
+                ХИЛТОН
+              </p>
+            </div>
+            <div class="right__con">
+              <p class="slide__liltitle">Выполненная работа:</p>
+              <p class="pro__slide-txt">
+                нанесение твердого пола и растительного ландшафта
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="col-3 nav__wrap">
+      <div class="nav__wrap">
         <nav class="nav">
           <div class="cold">
             <div class="nav__brand">
