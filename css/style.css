@@ -767,6 +767,7 @@ table {
   margin-bottom: 24px;
   font-family: var(--decor-font);
   line-height: 40px;
+  max-width: 80%;
 }
 .sec__txt {
   font-size: var(--18px);
@@ -793,4 +794,18 @@ table {
   border: none;
   width: 100%;
   padding: 18px 0;
+}
+.righto__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.righto {
+  max-width: 1680px;
+  width: 100%;
+  padding: 32px 0;
+  margin: 56px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: end;
 }
