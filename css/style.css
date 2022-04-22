@@ -407,8 +407,6 @@ table {
 .news {
   padding: 56px 0;
 }
-.news__grid {
-}
 .news__pic {
   height: 360px;
   object-fit: cover;
@@ -453,4 +451,29 @@ table {
 }
 .news__mid {
   padding: 16px 24px;
+}
+.serv__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.serv__pic {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.serv__txt {
+  font-size: var(--20px);
+  line-height: 32px;
+  color: black;
+  text-align: center;
+  font-family: var(--decor-font);
+  transition: 0.3s;
+}
+.serv__card-link {
+  text-decoration: none;
+}
+.serv__card-link:hover .serv__txt {
+  color: var(--green);
 }
