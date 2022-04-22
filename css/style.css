@@ -749,6 +749,14 @@ table {
   font-size: var(--48px);
   font-family: var(--decor-font);
   line-height: 56px;
+  text-transform: uppercase;
+}
+.page__sub {
+  font-size: var(--18px);
+  line-height: 22px;
+  font-family: var(--decor-font);
+  opacity: 0.7;
+  padding: 12px 0 32px 0;
 }
 .lefto {
   max-width: 1680px;
@@ -795,6 +803,12 @@ table {
   border: none;
   width: 100%;
   padding: 18px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.sec__btn:hover {
+  color: white;
 }
 .righto__wrapper {
   display: flex;
@@ -809,4 +823,51 @@ table {
   border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: end;
+}
+.full__slider {
+  padding: 80px 0;
+}
+.pageSlider {
+  height: 850px;
+}
+.pageSlider img {
+  height: 740px;
+}
+.pageSlider .swiper-slide-active img {
+  height: 850px;
+}
+.page__slide {
+  position: relative;
+  z-index: 1;
+}
+.slide__button {
+  z-index: 99;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--20px);
+  text-decoration: none;
+  font-family: var(--decor-font);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.slide__button:hover {
+  color: white;
+}
+.pageSlide:hover .slide__button {
+  opacity: 1;
+  visibility: visible;
+}
+.second__full-slider {
+  background: var(--black);
+  color: white;
 }

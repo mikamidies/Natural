@@ -48,6 +48,33 @@ var swiper = new Swiper(".partnersSwiper", {
   speed: 3000,
 });
 
+var swiper = new Swiper(".projektSwiper2", {
+  navigation: {
+    nextEl: ".projekt-next2",
+    prevEl: ".projekt-prev2",
+  },
+  slidesPerView: 1.4,
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  speed: 800,
+});
+var swiper = new Swiper(".projektSwiper3", {
+  navigation: {
+    nextEl: ".projekt-next3",
+    prevEl: ".projekt-prev3",
+  },
+  slidesPerView: 1.4,
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  speed: 900,
+});
+
 var element = document.getElementById("num");
 var maskOptions = {
   mask: "+{998}(00)000-00-00",
