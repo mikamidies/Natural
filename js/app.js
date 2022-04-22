@@ -46,3 +46,9 @@ var swiper = new Swiper(".partnersSwiper", {
   },
   speed: 3000,
 });
+
+var element = document.getElementById("num");
+var maskOptions = {
+  mask: "+{998}(00)000-00-00",
+};
+var mask = IMask(element, maskOptions);
