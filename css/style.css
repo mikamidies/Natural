@@ -678,6 +678,7 @@ table {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9;
 }
 .navbar__collapse {
   display: flex;
@@ -750,4 +751,46 @@ table {
 }
 .lefto {
   max-width: 1680px;
+  width: 100%;
+  padding: 32px 0;
+  margin: 56px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.page__home-img {
+  height: 655px;
+  object-fit: cover;
+  width: 100%;
+}
+.sec__title {
+  font-size: var(--32px);
+  margin-bottom: 24px;
+  font-family: var(--decor-font);
+  line-height: 40px;
+}
+.sec__txt {
+  font-size: var(--18px);
+  opacity: 0.7;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.sec__list {
+  background: var(--black);
+  color: white;
+  padding: 32px 56px;
+  margin-bottom: 24px;
+}
+.sec__li {
+  font-size: var(--18px);
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.sec__btn {
+  font-family: var(--decor-font);
+  color: white;
+  background: var(--green);
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  padding: 18px 0;
 }
