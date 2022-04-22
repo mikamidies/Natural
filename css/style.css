@@ -522,6 +522,7 @@ table {
 .con__row {
   position: relative;
   z-index: 9;
+  align-items: center;
 }
 .con__title {
   font-size: var(--32px);
@@ -669,4 +670,52 @@ table {
 }
 .bot__txt {
   opacity: 0.7;
+}
+.navbar {
+  background: var(--black);
+  color: white;
+}
+.navbar__collapse {
+  display: flex;
+  align-items: center;
+}
+.navbar__links {
+  margin-right: 120px;
+}
+.langs {
+  margin-right: 40px;
+}
+.navbar__link {
+  font-size: var(--20px);
+  opacity: 0.7;
+  font-family: var(--decor-font);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-right: 40px;
+}
+.nav__link:last-child,
+.langs__link:last-child {
+  margin-right: 0;
+}
+.navbar__link:hover,
+.langs__link:hover,
+.navbar__con-link:hover {
+  color: white;
+  opacity: 1;
+}
+.langs__link {
+  font-size: var(--20px);
+  opacity: 0.7;
+  font-family: var(--decor-font);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.navbar__con-link {
+  font-size: var(--20px);
+  font-family: var(--decor-font);
+  color: white;
+  transition: 0.3s;
 }

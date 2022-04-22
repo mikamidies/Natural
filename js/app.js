@@ -5,6 +5,7 @@
 // });
 
 var swiper = new Swiper(".homeSwiper", {
+  loop: true,
   navigation: {
     nextEl: ".home-next",
     prevEl: ".home-prev",
@@ -52,3 +53,25 @@ var maskOptions = {
   mask: "+{998}(00)000-00-00",
 };
 var mask = IMask(element, maskOptions);
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// let conWrap = document.getElementById("conWrap");
+
+// ScrollTrigger.matchMedia({
+//   "(min-width: 800px)": function () {
+//     gsap.to(".nav", {
+//       scrollTrigger: {
+//         trigger: ".nav__wrap",
+//         start: "top top",
+//         endTrigger: "#con" + 500,
+//         duration: 1,
+//         delay: 0.1,
+//         // end: "bottom 50%-=100px",
+//         scrub: 1,
+//         toggleActions: "restart none reverse pause",
+//       },
+//       y: conWrap?.clientHeight - 200,
+//     });
+//   },
+// });
