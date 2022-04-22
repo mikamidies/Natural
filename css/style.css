@@ -678,7 +678,8 @@ table {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 9999;
+  padding: 16px 0;
 }
 .navbar__collapse {
   display: flex;
