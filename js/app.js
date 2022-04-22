@@ -32,3 +32,17 @@ var swiper = new Swiper(".projektSwiper", {
   },
   speed: 700,
 });
+
+var swiper = new Swiper(".partnersSwiper", {
+  navigation: {
+    nextEl: ".partners-next",
+    prevEl: ".partners-prev",
+  },
+  slidesPerView: 4,
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 1,
+  },
+  speed: 3000,
+});
