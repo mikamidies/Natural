@@ -950,3 +950,135 @@ table {
 .cer__item:nth-child(even) {
   margin-top: 64px;
 }
+@media screen and (max-width: 767px) {
+  :root {
+    --18px: 16px;
+  }
+  .nav,
+  .nav__wrap {
+    display: none;
+  }
+  .con__wrap {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .slide__img {
+    height: 350px;
+  }
+  .home__title,
+  .about__title {
+    font-size: var(--28px);
+    line-height: 48px;
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  .home__sub {
+    line-height: 24px;
+    font-size: var(--18px);
+  }
+  .home__content {
+    flex-direction: column-reverse;
+  }
+  .slide__btn {
+    height: initial;
+    width: initial;
+  }
+  .btns {
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+  .home__content,
+  .about {
+    padding: 32px 0 60px 0;
+  }
+  .about__video {
+    height: 480px;
+    margin-bottom: 2rem;
+  }
+  .about__sup {
+    font-size: var(--18px);
+  }
+  .item__btn {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .big__num {
+    font-size: var(--32px);
+  }
+  .num__sub {
+    margin-bottom: 0;
+  }
+  .item__top {
+    margin-bottom: 3rem;
+  }
+  .title {
+    font-size: var(--32px);
+    line-height: 150%;
+  }
+  .projektSwiper {
+    height: initial;
+  }
+  .projekt__img,
+  .swiper-slide-active img {
+    height: 340px !important;
+  }
+  .green__btns {
+    position: static;
+    margin-top: 3rem;
+    padding-left: 1.5rem;
+    gap: 2rem;
+  }
+  .projekt__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .pro__slide-title {
+    font-size: var(--24px);
+    line-height: 150%;
+  }
+  .news__grid .row {
+    flex-direction: column;
+  }
+  .serv__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .part__top {
+    flex-direction: column;
+  }
+  .top__btns {
+    display: none;
+  }
+  .con__input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .con__button {
+    width: 100%;
+    margin-top: 0;
+  }
+  .con__img {
+    height: 300px;
+  }
+  .contact::after,
+  .contact::before {
+    background: none;
+  }
+  .footer {
+    text-align: center;
+  }
+  .con__item,
+  .add__item {
+    justify-content: center;
+  }
+  .foot__socs,
+  .foot__links {
+    margin-bottom: 3rem;
+  }
+  .foot__txt {
+    max-width: 100%;
+  }
+  .projektSwiper,
+  .partnersSwiper {
+    width: 100%;
+  }
+}

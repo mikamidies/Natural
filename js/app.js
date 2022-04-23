@@ -25,7 +25,7 @@ var swiper = new Swiper(".projektSwiper", {
     nextEl: ".projekt-next",
     prevEl: ".projekt-prev",
   },
-  slidesPerView: 1.4,
+  slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
   autoplay: {
@@ -39,13 +39,24 @@ var swiper = new Swiper(".partnersSwiper", {
     nextEl: ".partners-next",
     prevEl: ".partners-prev",
   },
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
   autoplay: {
     delay: 1,
   },
   speed: 3000,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 var swiper = new Swiper(".projektSwiper2", {
