@@ -388,10 +388,10 @@ table {
   display: flex;
 }
 .con__wrap {
-  width: 77%;
+  width: 80%;
 }
 .nav__wrap {
-  width: 23%;
+  width: 20%;
 }
 .green__btns {
   position: absolute;
@@ -870,4 +870,55 @@ table {
 .second__full-slider {
   background: var(--black);
   color: white;
+}
+.about__content {
+  padding: 88px 0 56px 0;
+}
+.ab__con-left p {
+  font-size: var(--18px);
+  line-height: 28px;
+  margin-bottom: 3rem;
+}
+.ab__con-left p:last-child {
+  margin-bottom: 0;
+}
+.ab__con-title {
+  font-size: var(--32px);
+  line-height: 40px;
+  font-family: var(--decor-font);
+  margin-bottom: 1rem;
+}
+.ab__con-author {
+  font-size: var(--20px);
+  font-style: italic;
+  color: var(--green);
+  text-align: end;
+  margin-bottom: 32px;
+}
+.ab__con-list {
+  background: var(--black);
+  padding: 34px;
+  color: white;
+}
+.ab__con-list p {
+  font-size: var(--18px);
+  line-height: 28px;
+}
+.margin-txt {
+  margin-bottom: 1rem;
+  display: block;
+}
+.full__slide-content {
+  padding: 88px 0;
+}
+.full__slide-txt {
+  font-size: var(--20px);
+  line-height: 28px;
+  margin-bottom: 3rem;
+}
+.full__slide-txt:last-child {
+  margin-bottom: 0;
+}
+.full__title {
+  margin-bottom: 48px;
 }
