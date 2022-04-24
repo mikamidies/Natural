@@ -32,6 +32,17 @@ var swiper = new Swiper(".projektSwiper", {
     delay: 5000,
   },
   speed: 700,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 1.4,
+    },
+  },
 });
 
 var swiper = new Swiper(".partnersSwiper", {
@@ -64,26 +75,48 @@ var swiper = new Swiper(".projektSwiper2", {
     nextEl: ".projekt-next2",
     prevEl: ".projekt-prev2",
   },
-  slidesPerView: 1.4,
+  slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
   autoplay: {
     delay: 5000,
   },
   speed: 800,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 1.4,
+    },
+  },
 });
 var swiper = new Swiper(".projektSwiper3", {
   navigation: {
     nextEl: ".projekt-next3",
     prevEl: ".projekt-prev3",
   },
-  slidesPerView: 1.4,
+  slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
   autoplay: {
     delay: 5000,
   },
   speed: 900,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 1.4,
+    },
+  },
 });
 
 var element = document.getElementById("num");
