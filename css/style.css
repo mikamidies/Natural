@@ -950,7 +950,43 @@ table {
 .cer__item:nth-child(even) {
   margin-top: 64px;
 }
+.hidden-hazard {
+  display: none;
+}
+.collapser {
+  cursor: pointer;
+  z-index: 99999;
+}
+.collapser__item {
+  width: 30px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+.collapser__item::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+.collapser__item::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
 @media screen and (max-width: 767px) {
+  .hidden-hazard {
+    display: block;
+  }
   :root {
     --18px: 16px;
   }
@@ -966,7 +1002,10 @@ table {
   .slide__img {
     height: 350px;
   }
-  .home__title,
+  .home__title {
+    font-size: 18px;
+    line-height: 150%;
+  }
   .about__title {
     font-size: var(--28px);
     line-height: 48px;
@@ -993,7 +1032,7 @@ table {
     padding: 32px 0 60px 0;
   }
   .about__video {
-    height: 480px;
+    height: 360px;
     margin-bottom: 2rem;
   }
   .about__sup {
@@ -1100,8 +1139,9 @@ table {
   .news__item {
     padding: 0;
   }
-  .news__pic {
-    height: 300px;
+  .news__pic,
+  .serv__pic {
+    height: 180px;
   }
   .news__txt {
     font-size: var(--18px);
@@ -1124,6 +1164,22 @@ table {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    transition: 0.3s;
+  }
+  .show-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .close-btn .collapser__item::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .close-btn .collapser__item::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .close-btn .collapser__item {
+    height: 0;
   }
   .navbar__links {
     margin-right: 0;
@@ -1183,7 +1239,8 @@ table {
     height: 360px;
     margin-bottom: 2rem;
   }
-  .sec__title {
+  .sec__title,
+  .slider-title {
     max-width: 100%;
     font-size: var(--24px);
     line-height: 150%;
@@ -1198,5 +1255,14 @@ table {
   }
   .sec__btn {
     margin-bottom: 2rem;
+  }
+  .greed {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cer__item:nth-child(even) {
+    margin-top: 0;
+  }
+  .little-big {
+    font-size: var(--24px);
   }
 }

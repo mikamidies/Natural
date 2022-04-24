@@ -26,7 +26,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <nav class="navbar">
       <div class="container">
         <div class="navbar__brand">
@@ -34,12 +34,12 @@
             <img src="./img/logo/brand.svg" alt="" />
           </a>
         </div>
-        <div class="navbar__collapse">
+        <div class="navbar__collapse" id="collapse">
           <div class="navbar__links">
             <a href="index.html" class="navbar__link">Главная</a>
             <a href="projekt.html" class="navbar__link">Проекты</a>
-            <a href="#" class="navbar__link">О нас</a>
-            <a href="#" class="navbar__link">Сертификаты</a>
+            <a href="about.html" class="navbar__link">О нас</a>
+            <a href="certificate.html" class="navbar__link">Сертификаты</a>
           </div>
           <div class="langs">
             <a href="#" class="langs__link">Ру</a>
@@ -48,6 +48,9 @@
           <div class="navbar__con">
             <a href="#" class="navbar__con-link">Связаться с нами</a>
           </div>
+        </div>
+        <div class="collapser" id="toggle">
+          <div class="collapser__item"></div>
         </div>
       </div>
     </nav>
@@ -58,7 +61,7 @@
           <a href="index.html" class="last__page"> Главная /</a>
           <p class="this__page">НАШИ СЕРТИФИКАТЫ</p>
         </div>
-        <h1 class="page__title">НАШИ СЕРТИФИКАТЫ</h1>
+        <h1 class="page__title little-big">НАШИ СЕРТИФИКАТЫ</h1>
       </div>
     </section>
 

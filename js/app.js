@@ -3,6 +3,15 @@
 // document.addEventListener('mousemove', function(e){
 //     cursor.style.cssText = 'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;';
 // });
+let toggle = document.getElementById("toggle");
+let collapse = document.getElementById("collapse");
+
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    collapse.classList.toggle("show-menu");
+    toggle.classList.toggle("close-btn");
+  });
+}
 
 var swiper = new Swiper(".homeSwiper", {
   loop: true,
