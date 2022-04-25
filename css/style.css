@@ -865,8 +865,8 @@ table {
   color: white;
 }
 .pageSlide:hover .slide__button {
-  opacity: 1;
-  visibility: visible;
+  /* opacity: 1;
+  visibility: visible; */
 }
 .second__full-slider {
   background: var(--black);
@@ -983,7 +983,55 @@ table {
   background: white;
   transition: 0.3s;
 }
+.projektSwiper,
+.projektSwiper2,
+.projektSwiper3 {
+  position: relative !important;
+}
+.full__content {
+  display: block;
+  position: absolute;
+  z-index: 9999999999999999999999999999;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  max-width: 530px;
+  color: white;
+}
+.ab__con-tetle {
+  font-size: var(--32px);
+  margin-bottom: 1rem;
+  font-family: var(--decor-font);
+}
+.ab__con-sub {
+  font-size: var(--20px);
+  margin-bottom: 2rem;
+  font-family: var(--decor-font);
+}
+.ab__con-liltitle {
+  font-size: var(--20px);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+.ab__con-txt {
+  font-size: var(--20px);
+  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 28px;
+}
 @media screen and (max-width: 767px) {
+  .full__content {
+    position: static;
+    color: black;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .full__white {
+    color: white;
+  }
+  .ab__con-tetle {
+    font-size: var(--24px);
+  }
   .hidden-hazard {
     display: block;
   }
