@@ -79,6 +79,9 @@ new Swiper(".partnersSwiper", {
   autoplay: {
     delay: 1,
   },
+  pagination: {
+    el: ".swiper-pagination",
+  },
   speed: 3000,
   breakpoints: {
     640: {

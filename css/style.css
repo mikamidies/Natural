@@ -864,10 +864,10 @@ table {
 .slide__button:hover {
   color: white;
 }
-.pageSlide:hover .slide__button {
-  /* opacity: 1;
-  visibility: visible; */
-}
+/* .pageSlide:hover .slide__button {
+  opacity: 1;
+  visibility: visible;
+} */
 .second__full-slider {
   background: var(--black);
   color: white;
@@ -954,6 +954,7 @@ table {
   display: none;
 }
 .collapser {
+  display: none;
   cursor: pointer;
   z-index: 99999;
 }
@@ -1019,7 +1020,24 @@ table {
   margin-bottom: 2rem;
   line-height: 28px;
 }
+.pagination {
+  display: none;
+}
+.swiper-pagination-bullet-active {
+  background: var(--green);
+}
+@media screen and (max-width: 1440px) {
+  .full__content {
+    max-width: 400px;
+  }
+}
 @media screen and (max-width: 767px) {
+  .pagination {
+    display: block;
+  }
+  .collapser {
+    display: block;
+  }
   .full__content {
     position: static;
     color: black;
