@@ -59,14 +59,35 @@
         <section class="home">
           <div class="swiper homeSwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/img1.jpg" alt="" class="slide__img" />
+              <div class="swiper-slide homeSlide">
+                <img
+                  id="projekt1"
+                  data-title="ПРОЕКТ ЖИЛОГО УЧАСТКА НИДАПАРК КАЯШЕХИР"
+                  data-sub="НИДА КОНСТРАКШН"
+                  src="./img/img1.jpg"
+                  alt=""
+                  class="slide__img"
+                />
               </div>
-              <div class="swiper-slide">
-                <img src="./img/img6.png" alt="" class="slide__img" />
+              <div class="swiper-slide homeSlide">
+                <img
+                  id="projekt2"
+                  data-title="ПРОЕКТ ЖИЛОГО УЧАСТКА SEOUL MIN"
+                  data-sub="НИДА КОНСТРАКШН"
+                  src="./img/img6.png"
+                  alt=""
+                  class="slide__img"
+                />
               </div>
-              <div class="swiper-slide">
-                <img src="./img/img.jpg" alt="" class="slide__img" />
+              <div class="swiper-slide homeSlide">
+                <img
+                  id="projekt3"
+                  data-title="ПРОЕКТ ЖИЛОГО УЧАСТКА NEW UZBEKISTAN"
+                  data-sub="НИДА КОНСТРАКШН"
+                  src="./img/img.jpg"
+                  alt=""
+                  class="slide__img"
+                />
               </div>
             </div>
             <div class="swiper-pagination slide__progress"></div>
@@ -74,12 +95,13 @@
           <div class="container">
             <div class="home__content">
               <div class="home__text">
-                <h1 class="home__title">
+                <h1 class="home__title" id="homeTitle">
                   ПРОЕКТ ЖИЛОГО УЧАСТКА НИДАПАРК КАЯШЕХИР
                 </h1>
-                <p class="home__sub">
-                  <img src="./img/logo/map.svg" alt="" /> НИДА КОНСТРАКШН
-                </p>
+                <div class="subb d-flex">
+                  <img src="./img/logo/map.svg" class="me-1" alt="" />
+                  <p class="home__sub" id="homeSub">НИДА КОНСТРАКШН</p>
+                </div>
               </div>
               <div class="btns">
                 <div class="swiper-button-prev home-prev slide__btn"></div>

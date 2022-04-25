@@ -13,7 +13,7 @@ if (toggle) {
   });
 }
 
-var swiper = new Swiper(".homeSwiper", {
+var homeSwiper = new Swiper(".homeSwiper", {
   loop: true,
   navigation: {
     nextEl: ".home-next",
@@ -29,7 +29,21 @@ var swiper = new Swiper(".homeSwiper", {
   speed: 2000,
 });
 
-var swiper = new Swiper(".projektSwiper", {
+// homeSwiper.on("slideChange", function () {
+//   let slideTitle = document.getElementById("homeTitlte");
+//   let slideTxt = document.getElementById("homeSub");
+//   let slideImg = document.querySelectorAll(".slide__img");
+
+//   slideImg.forEach((slideImg) => {
+//     let dataTitle = slideImg.dataset.title;
+//     let dataSub = slideImg.dataset.sub;
+
+//     slideTitle.innerText = dataTitle;
+//     slideTxt.innerText = dataSub;
+//   });
+// });
+
+new Swiper(".projektSwiper", {
   navigation: {
     nextEl: ".projekt-next",
     prevEl: ".projekt-prev",
@@ -54,7 +68,7 @@ var swiper = new Swiper(".projektSwiper", {
   },
 });
 
-var swiper = new Swiper(".partnersSwiper", {
+new Swiper(".partnersSwiper", {
   navigation: {
     nextEl: ".partners-next",
     prevEl: ".partners-prev",
@@ -79,7 +93,7 @@ var swiper = new Swiper(".partnersSwiper", {
   },
 });
 
-var swiper = new Swiper(".projektSwiper2", {
+new Swiper(".projektSwiper2", {
   navigation: {
     nextEl: ".projekt-next2",
     prevEl: ".projekt-prev2",
@@ -103,7 +117,7 @@ var swiper = new Swiper(".projektSwiper2", {
     },
   },
 });
-var swiper = new Swiper(".projektSwiper3", {
+new Swiper(".projektSwiper3", {
   navigation: {
     nextEl: ".projekt-next3",
     prevEl: ".projekt-prev3",
