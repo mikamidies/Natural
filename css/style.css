@@ -1032,6 +1032,9 @@ table {
   }
 }
 @media screen and (max-width: 767px) {
+  .righto {
+    padding-bottom: 0;
+  }
   .pagination {
     display: block;
   }
